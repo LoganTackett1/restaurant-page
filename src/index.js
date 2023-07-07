@@ -1,4 +1,7 @@
 import front from './front-page.js';
 import './style.css';
 
-front.load();
+const loaded = front.load();
+for (let item of loaded.tabList) {
+    console.log(item.tabStatus);
+}

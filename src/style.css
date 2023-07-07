@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "Geograph";
+    src: url("./DMSans-Bold.ttf");
+    font-weight: bold;
+  }
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Geograph";
 }
 
 html, body {
@@ -32,21 +39,49 @@ html, body {
     margin-left: 8px;
     margin-right: 8px;
     margin-bottom: 40px;
-    background-color: red;
+    background-color: rgba(247,246,242,255);
     border-radius: 20px;
-    transition: height 0.25s;
+    transition: height 0.25s, background-size 0.25s;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: -2px 2px 15px rgba(100,100,100,0.5);
 }
 
-.tab:hover {
-    height: 140%;
+.tab > p {
+    margin-top: 20px;
+    margin-left: 40px;
+    color: black;
+    font-size: 24px;
 }
 
 .tab.selected {
-    height: 140%;
+    height: 170%;
+    background-size: 65%;
 }
 
 .tab:not(.selected) {
-    height: 110%;
+    height: 140%;
+    background-size: 50%;
+}
+
+.online-exclusive {
+    background-image: url(https://bjsrestaurants.scene7.com/is/image/bjsrestaurants/hero-pizza-card-zoomed);
+}
+
+.lunch-specials {
+    background-image: url(https://bjsrestaurants.scene7.com/is/image/bjsrestaurants/hero-pizza-card-zoomed);
+}
+
+.office-catering {
+    background-image: url(https://bjsrestaurants.scene7.com/is/image/bjsrestaurants/catering-card2-zoomed);
+}
+
+.beer-dinner-tickets {
+    background-image: url(https://bjsrestaurants.scene7.com/is/image/bjsrestaurants/hero-beer-dinner-card-gen2);
 }
 
 .header {

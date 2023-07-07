@@ -30,20 +30,36 @@ const load = function () {
     tabs.appendChild(onlExcl);
     onlExcl.tabStatus = true;
 
+    const onlExclTxt = document.createElement('p');
+    onlExclTxt.textContent = "ONLINE EXCLUSIVE";
+    onlExcl.appendChild(onlExclTxt);
+
     const lunchSpech = document.createElement('div');
     lunchSpech.classList.add("lunch-specials");
     tabs.appendChild(lunchSpech);
     lunchSpech.tabStatus = false;
+
+    const lunchSpechTxt = document.createElement('p');
+    lunchSpechTxt.textContent = "LUNCH SPECIALS";
+    lunchSpech.appendChild(lunchSpechTxt);
 
     const offCater = document.createElement('div');
     offCater.classList.add("office-catering");
     tabs.appendChild(offCater);
     offCater.tabStatus = false;
 
+    const offCaterTxt = document.createElement('p');
+    offCaterTxt.textContent = "OFFICE CATERING";
+    offCater.appendChild(offCaterTxt);
+
     const beerDT = document.createElement('div');
     beerDT.classList.add("beer-dinner-tickets");
     tabs.appendChild(beerDT);
     beerDT.tabStatus = false;
+
+    const beerDTTxt = document.createElement('p');
+    beerDTTxt.textContent = "BEER DINING TICKETS";
+    beerDT.appendChild(beerDTTxt);
 
     const tabList = tabs.getElementsByTagName('div');
 
@@ -71,7 +87,9 @@ const load = function () {
             }
         });
     }
-    
+    return {
+        tabList
+    }
 }
 export default {
     load
