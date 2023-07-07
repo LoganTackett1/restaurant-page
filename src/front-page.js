@@ -63,30 +63,6 @@ const load = function () {
 
     const tabList = tabs.getElementsByTagName('div');
 
-    for (let e of tabList) {
-        e.classList.add("tab");
-        e.addEventListener('mouseenter',()=>{
-            if (e.tabStatus != true) {
-                e.classList.toggle("selected");
-            }
-        });
-        e.addEventListener('mouseleave',()=>{
-            if (e.tabStatus != true) {
-                e.classList.toggle("selected");
-            }
-        });
-        e.addEventListener('click',() => {
-            if (e.tabStatus != true) {
-                for (let item of tabList) {
-                    if (item.tabStatus == true) {
-                        item.classList.toggle("selected");
-                        item.tabStatus = false;
-                    }
-                }
-                e.tabStatus = true;
-            }
-        });
-    }
     return {
         tabList
     }
