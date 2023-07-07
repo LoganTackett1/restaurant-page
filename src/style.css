@@ -118,7 +118,7 @@ html, body {
 
 .tab-content {
     background-position: right bottom -200px;
-    background-size: 100%;
+    background-size: 110%;
 }
 
 .tab-content > div {
@@ -129,34 +129,34 @@ html, body {
 
 .tab-content > .container > h1 {
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: medium;
-    padding-top: 60px;
+    padding-top: 35px;
     padding-left: 60px;
     padding-right: 500px;
 }
 
 .tab-content > .container > p:not(.small-txt) {
     color: white;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: normal;
-    padding-top: 10px;
+    padding-top: 7px;
     padding-left: 60px;
     padding-right: 500px;
 }
 
 .tab-content > .container > .small-txt {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
-    padding-top: 10px;
+    padding-top: 7px;
     padding-left: 60px;
     padding-right: 500px;
 }
 
 .tab-content > .container > div {
     padding-left: 60px;
-    padding-top: 10px;
+    padding-top: 7px;
 }
 
 .tab-content strong {
@@ -165,11 +165,11 @@ html, body {
 
 .tab-content > .container .learn-more {
     border: black solid 3px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: white;
     color: black;
     width: 175px;
-    height: 50px;
+    height: 40px;
     font-size: 20px;
     margin-right: 20px;
     transition: background-color 0.5s, border-color 0.5s, color 0.5s;
