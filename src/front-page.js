@@ -10,11 +10,6 @@ const load = function () {
     userBar.classList.add("user-bar");
     header.appendChild(userBar);
 
-    const navBar = document.createElement('div');
-    navBar.classList.add("nav-bar");
-    header.appendChild(navBar);
-
-
     const tabContent = document.createElement('div');
     tabContent.classList.add("tab-content");
     content.appendChild(tabContent);

@@ -3,6 +3,7 @@ import onlExcl from './online-exclusive.js';
 import lunchSpech from './lunch-specials.js';
 import offCater from './office-catering.js';
 import beerDT from './beer-dinner-tickets.js';
+import header from './header.js';
 import './style.css';
 
 const loaded = front.load();
@@ -72,3 +73,5 @@ for (let e of loaded.tabList) {
         }
     });
 }
+
+header.load();
